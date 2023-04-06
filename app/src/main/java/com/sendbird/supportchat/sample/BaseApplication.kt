@@ -7,6 +7,7 @@ import com.sendbird.android.exception.SendbirdException
 import com.sendbird.android.handler.InitResultHandler
 import com.sendbird.uikit.SendbirdUIKit
 import com.sendbird.uikit.adapter.SendbirdUIKitAdapter
+import com.sendbird.uikit.consts.ReplyType
 import com.sendbird.uikit.interfaces.UserInfo
 
 class BaseApplication : Application() {
@@ -55,5 +56,6 @@ class BaseApplication : Application() {
         }, this)
 
         SendbirdUIKit.setUIKitFragmentFactory(UIKitCustomFragmentFactory())
+        SendbirdUIKit.setReplyType(ReplyType.NONE)
     }
 }
