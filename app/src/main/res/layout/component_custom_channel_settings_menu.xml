@@ -135,48 +135,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/searchItem"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/sb_size_56"
-        android:paddingLeft="@dimen/sb_size_16"
-        android:paddingRight="@dimen/sb_size_16"
-        android:background="?attr/selectableItemBackground">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/searchIcon"
-            android:layout_width="@dimen/sb_size_24"
-            android:layout_height="@dimen/sb_size_24"
-            android:scaleType="centerCrop"
-            android:src="@drawable/icon_search"
-            android:tint="@color/primary_300"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/searchName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/searchName"
-            android:layout_width="@dimen/sb_size_0"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/sb_size_16"
-            android:layout_marginRight="@dimen/sb_size_16"
-            android:gravity="center_vertical"
-            android:text="Search in channel"
-            android:textSize="@dimen/sb_text_size_16"
-            android:textColor="@color/onlight_01"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/searchIcon"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <View
-            android:id="@+id/divider3"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/sb_size_1"
-            android:background="@color/onlight_04"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
 </LinearLayout>

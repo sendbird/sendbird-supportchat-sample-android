@@ -5,10 +5,7 @@ import androidx.fragment.app.Fragment
 import com.sendbird.supportchat.sample.main.CustomChannelFragment
 import com.sendbird.supportchat.sample.main.CustomChannelListFragment
 import com.sendbird.supportchat.sample.main.CustomChannelSettingsFragment
-import com.sendbird.uikit.fragments.ChannelFragment
-import com.sendbird.uikit.fragments.ChannelListFragment
-import com.sendbird.uikit.fragments.ChannelSettingsFragment
-import com.sendbird.uikit.fragments.UIKitFragmentFactory
+import com.sendbird.uikit.fragments.*
 
 class UIKitCustomFragmentFactory : UIKitFragmentFactory() {
     override fun newChannelListFragment(args: Bundle): Fragment {
@@ -32,6 +29,14 @@ class UIKitCustomFragmentFactory : UIKitFragmentFactory() {
             .withArguments(args)
             .setUseHeader(true)
             .setCustomFragment(CustomChannelSettingsFragment())
+            .build()
+    }
+
+    override fun newMemberListFragment(channelUrl: String, args: Bundle): Fragment {
+        return MemberListFragment.Builder(channelUrl)
+            .withArguments(args)
+            .setUseHeader(true)
+            .setUseHeaderRightButton(false)
             .build()
     }
 }
