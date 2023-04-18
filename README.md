@@ -7,15 +7,15 @@ Sendbird Support Chat: Salesforce Connector is a Sendbird Chat integration into 
 <p align="center">
   <img
     src="./channel_list.png"
-    width="240"
+    width="250"
   />
   <img
     src="./channel.png"
-    width="240"
+    width="250"
   />
   <img
     src="./channel_info.png"
-    width="240"
+    width="250"
   />
 </p>
 
