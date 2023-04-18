@@ -4,7 +4,7 @@ This is an example of [Sendbird Support Chat](https://sendbird.com/docs/support-
 Sendbird Support Chat: Salesforce Connector is a Sendbird Chat integration into your existing Salesforce Service Cloud that offers support focused chat experience with vast new features for agent productivity. With this Support Chat Salesforce sample app, you can quick start your client-side implementation.
 </p>
 
-<center>
+<p align="center">
   <img
     src="./channel_list.png"
     width="200"
@@ -17,7 +17,7 @@ Sendbird Support Chat: Salesforce Connector is a Sendbird Chat integration into 
     src="./channel_info.png"
     width="200"
   />
-</center>
+</p>
 
 
 ## Getting Started
